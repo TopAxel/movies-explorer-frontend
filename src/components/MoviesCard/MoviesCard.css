@@ -33,11 +33,11 @@
     border: none;
     border-radius: 36px;
     transition: opacity .2s linear;
+    cursor: pointer;
 }
 
 .card__button:hover {
     opacity: .6;
-    cursor: pointer;
 }
 
 .card__button_inactive {
