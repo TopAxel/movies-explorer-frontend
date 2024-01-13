@@ -1,0 +1,160 @@
+.search {
+    display: flex;
+    margin: 0 70px 0;
+    padding: 70px 0 0;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.search__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 33px;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 13px;
+}
+
+.search__input {
+    width: 90%;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+}
+
+.search__input:focus {
+    width: 90%;
+    border: none;
+}
+
+.search__input::placeholder {
+    color: #a0a0a0;
+}
+
+.search__button {
+    padding: 8px 10.35px;
+    outline: none;
+    border: none;
+    border-radius: 48px;
+    background-color: #3456f3;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.63;
+    transition: opacity .2s linear;
+}
+
+.search__button:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+.search__toggle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 0 48px;
+}
+
+.search__films {
+    margin: 0 0 0 14px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.38;
+}
+
+.search__tumbler {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.search__checkbox {
+    display: none;
+}
+
+.search__slider {
+    position: absolute;
+    inset: 0;
+    background: #EBEBEB;
+    border-radius: 20px;
+    transition: .6s;
+}
+
+.search__slider::before {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    left: 2px;
+    bottom: 2px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    transform: scale(-1, -1);
+}
+
+.search__checkbox:checked+.search__slider {
+    background: #2BE080;
+}
+
+.search__checkbox:checked+.search__slider::before  {
+    transform: translateX(20px);
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 880px) {
+    .search {
+        align-items: flex-end;
+        margin: 0 30px 0;
+        padding: 80px 0 0;
+    }
+
+    .search__container {
+        margin: 0 0 30px;
+    }
+
+    .search__toggle {
+        margin: 0 0 51px;
+        flex-direction: row;
+    }
+
+    .search__films {
+        margin: 0;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search {
+        margin: 0 15px 0;
+        align-items: center;
+        padding-top: 90px;
+    }
+
+    .search__container {
+        margin: 0 0 41px;
+        padding-bottom: 15px;
+    }
+
+    .search__input {
+        padding: 0;
+        width: 80%;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+
+    .search__toggle {
+        margin: 0 0 26px;
+    }
+
+    .search__films {
+        font-size: 11px;
+        margin-right: 13px;
+    }
+}
