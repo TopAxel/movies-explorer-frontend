@@ -6,4 +6,6 @@
 
 Ссылка на [frontend](https://popovartemmovies.nomoredomainsmonster.ru)
 
+Ссылка на [Pull-requests](https://github.com/TopAxel/movies-explorer-frontend/pull/2)
+
 IP: 158.160.117.49
